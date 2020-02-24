@@ -1,1 +1,43 @@
-%P <チャット画面>
+.chat-main
+  .chat-main__main-header
+    .chat-main__main-header__left-box
+      .chat-main__main-header__left-box__current-group
+        %h2.chat-main__main-header__left-box__current-group
+          アベンジャーズ
+        %ul.chat-main__main-header__left-box__member-list
+          member : トニー キャプテン ソー バナー ロマノフ バートン
+
+    = link_to "#" do
+      .chat-main__main-header__edit-btn
+        Edit
+  .chat-main__messages
+    .chat-main__messages__comment
+      .chat-main__messages__comment__upper-info
+        .chat-main__messages__comment__upper-info__talker
+          %p キャプテン
+        .chat-main__messages__comment__upper-info__date
+          %p 2019/04/26(mon) 17:40:33
+      .chat-main__messages__comment__text
+        %p スターク、緊急事態だ！今すぐ来てくれ！！
+    .chat-main__messages__comment
+      .chat-main__messages__comment__upper-info
+        .chat-main__messages__comment__upper-info__talker
+          %p キャプテン
+        .chat-main__messages__comment__upper-info__date
+          %p 2019/04/26(mon) 20:12:57
+      .chat-main__messages__comment__text
+        %p 頼むスターク・・・。君が必要だ。
+
+  .chat-main__form
+    .chat-main__form__form
+      .chat-main__form__form__input-box
+        .chat-main__form__form__input-box__text
+          %input.chat-main__form__form__input-box__text{placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon("fas","image")
+            %input{type: "file"}
+            
+            -# = img_src "Photos Library.Photoslibrary"
+      = link_to "#" do
+        .chat-main__form__form__submit-btn
+          Send
