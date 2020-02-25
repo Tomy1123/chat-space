@@ -3,6 +3,7 @@
     .chat-side__side-header__side-box
       %p.chat-side__side-header__side-box__username
         トニー
+        -# = current_user.name
       %ul.chat-side__side-header__side-box__menu
         %li.chat-side__side-header__side-box-user
           = link_to "#"  do
@@ -10,6 +11,8 @@
         %li.chat-side__side-header__side-box__menu-group
           = link_to "#"  do
             = icon("fas","cog")
+          -#    = link_to edit_user_path(current_user) do
+          -# = icon('fas', 'cog', class: 'icon')
   .chat-side__groups
     .chat-side__groups__group
       .chat-side__groups__group__name
