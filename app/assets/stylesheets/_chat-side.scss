@@ -37,9 +37,11 @@
       padding: 20px 20px 0;
       overflow: scroll;
       height: calc(100vh - 100px);
+      a{
+        color: white;
+        text-decoration: none;
+      }
       &__group {
-         width: 260px;
-         height: 45px;
           margin-bottom: 40px;
         &__name {
           color: white;
