@@ -22,9 +22,9 @@
     -#       gennki
     - current_user.groups.each do |group|
       .chat-side__groups__group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .chat-side__groups__group__name
             = group.name
           .chat-side__groups__group__latest-message
-            メッセージはまだありません。
+            = group.show_last_message
 
