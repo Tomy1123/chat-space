@@ -13,21 +13,6 @@
   .chat-main__messages
     = render @messages
     .chat-main__messages__comment
-      -# .chat-main__messages__comment__upper-info
-    -#     .chat-main__messages__comment__upper-info__talker
-    -#       %p キャプテン
-    -#     .chat-main__messages__comment__upper-info__date
-    -#       %p 2019/04/26(mon) 17:40:33
-    -#   .chat-main__messages__comment__text
-    -#     %p bbbb
-    -# .chat-main__messages__comment
-    -#   .chat-main__messages__comment__upper-info
-    -#     .chat-main__messages__comment__upper-info__talker
-    -#       %p hgd
-    -#     .chat-main__messages__comment__upper-info__date
-    -#       %p 2019/04/26(mon) 20:12:57
-    -#   .chat-main__messages__comment__text
-    -#     %p aaa
 
   .chat-main__form
     = form_for [@group, @message] do |f|
