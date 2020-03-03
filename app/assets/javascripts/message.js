@@ -1,7 +1,7 @@
 $(function(){ 
   var buildHTML = function(message) {
     if (message.content && message.image) {
-      var html = `<div class="message" data-message-id=` + message.id + `>
+      var html = `<div class="message" data-message-id="${ message.id }">
          <div class="upper-message">
            <div class="upper-message__user-name">
             ${message.user_name}
@@ -18,7 +18,7 @@ $(function(){
          </div>
        </div>`
     } else if (message.content) {
-      var html = `<div class="message" data-message-id=` + message.id + `>
+      var html = `<div class="message" data-message-id="${ message.id }">
          <div class="upper-message">
            <div class="upper-message__user-name">
           ${message.user_name}
@@ -34,7 +34,7 @@ $(function(){
          </div>
        </div>`
     } else if (message.image) {
-      var html = `<div class="message" data-message-id=` + message.id + `>
+      var html = `<div class="message" data-message-id="${ message.id }" >
          <div class="upper-message">
            <div class="upper-message__user-name">
           ${message.user_name}
@@ -64,7 +64,7 @@ $(function(){
       contentType: false
     })
      .done(function(data){
-       console.log(data)
+
        $('.new_message')[0].reset();
        var html = buildHTML(data);
        $('.chat-main__messages').append(html);
