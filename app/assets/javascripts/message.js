@@ -78,8 +78,6 @@ $(function(){
      });
    })
   
-
-
 var reloadMessages = function() {
  var last_message_id = $('.message:last').data("message-id");
  var url = $(this).attr('action')
