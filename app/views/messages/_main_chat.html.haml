@@ -9,7 +9,8 @@
 
     = link_to edit_group_path(params[:group_id]), method: :get do
       .chat-main__main-header__edit-btn
-        Edit
+        = link_to "Edit", class: 'a'
+
   .chat-main__messages
     .upper-message
       .upper-message_user-name
