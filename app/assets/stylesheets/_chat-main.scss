@@ -15,9 +15,9 @@
       &__current-group {
         font-size: 20px;
         color: #333;
-        margin-bottom: 15px;
     }
       &__member-list {
+        margin-top: 15px;
         display: flex;
         font-size: 12px;
         color: #999999;
@@ -39,7 +39,7 @@
 }
   &__messages {
     height: calc(100vh - 190px);
-    padding: 46px 40px;
+    padding: 0px 40px;
     background-color: #fafafa;
     overflow: scroll;
     .upper-message{
